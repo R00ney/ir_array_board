@@ -19,5 +19,8 @@ DRILEGEND.CFG
 *.gtp
 *.GTP
 
-*.pyc
-*.db
+*.fab
+*.oln
+*.placement.txt
+*.toollist.drl
+

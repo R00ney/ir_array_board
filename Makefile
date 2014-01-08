@@ -1,18 +1,22 @@
-name = ir_board
+def = panel
+name = panel
 
 gerbers = $(name).gbl $(name).gbo $(name).gbs $(name).gtl $(name).gto $(name).gts $(name).drd
+
 default: zip
 
-$(name)-gerber.zip: $(gerbers)
+zip: $(name)-gerber.zip
+
+$(name)-gerber.zip: $(name).gtl
 	zip $(name)-gerber.zip $(gerbers)
 
-zip: $(name)-gerber.zip
+$(name).gtl: $(def).def gerbmerge.cfg
+	gerbmerge gerbmerge.cfg $(def).def
 
 view:
 	gerbv $(name).gt? $(name).gb? $(name).drd &
 
-.PHONY: clean
 clean:
-	rm -f $(gerbers) $(name)-gerber.zip *.b#? *.s#? *.dri *.gpi *.pro *.bor
+	rm -f $(gerbers) *.drl *.fab *.oln *.bor *.placement.txt *.zip
 
-# vim: set noexpandtab:
+# vim: noexpandtab
