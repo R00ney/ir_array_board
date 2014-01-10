@@ -17,6 +17,6 @@ view:
 	gerbv $(name).gt? $(name).gb? $(name).drd &
 
 clean:
-	rm -f $(gerbers) *.drl *.fab *.oln *.bor *.placement.txt *.zip
+	rm -f $(gerbers) *.drl *.fab *.oln *.placement.txt *.zip
 
 # vim: noexpandtab
