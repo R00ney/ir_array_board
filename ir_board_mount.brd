@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1852,19 +1852,17 @@ design rules under a new name.</description>
 <signal name="A">
 <contactref element="U$2" pad="10"/>
 <contactref element="SV5" pad="5"/>
-<wire x1="26.67" y1="3.048" x2="26.67" y2="7.62" width="0.6096" layer="1"/>
-<wire x1="26.67" y1="7.62" x2="16.51" y2="17.78" width="0.6096" layer="1"/>
-<wire x1="16.51" y1="17.78" x2="11.43" y2="17.78" width="0.6096" layer="1"/>
+<wire x1="26.67" y1="3.048" x2="26.67" y2="5.588" width="0.6096" layer="1"/>
+<wire x1="26.67" y1="5.588" x2="14.478" y2="17.78" width="0.6096" layer="1"/>
+<wire x1="14.478" y1="17.78" x2="11.43" y2="17.78" width="0.6096" layer="1"/>
 </signal>
 <signal name="B">
 <contactref element="U$2" pad="11"/>
 <contactref element="SV5" pad="4"/>
-<wire x1="29.21" y1="3.048" x2="29.21" y2="5.08" width="0.6096" layer="16"/>
-<wire x1="29.21" y1="5.08" x2="24.638" y2="5.08" width="0.6096" layer="16"/>
-<via x="24.638" y="5.08" extent="1-16" drill="0.9"/>
-<wire x1="24.638" y1="5.08" x2="24.638" y2="7.112" width="0.6096" layer="1"/>
-<wire x1="24.638" y1="7.112" x2="16.51" y2="15.24" width="0.6096" layer="1"/>
-<wire x1="16.51" y1="15.24" x2="11.43" y2="15.24" width="0.6096" layer="1"/>
+<wire x1="29.21" y1="3.048" x2="28.956" y2="3.302" width="0.6096" layer="16"/>
+<wire x1="28.956" y1="3.302" x2="28.956" y2="5.334" width="0.6096" layer="16"/>
+<wire x1="28.956" y1="5.334" x2="19.05" y2="15.24" width="0.6096" layer="16"/>
+<wire x1="19.05" y1="15.24" x2="11.43" y2="15.24" width="0.6096" layer="16"/>
 </signal>
 <signal name="OUT">
 <contactref element="U$2" pad="1"/>
